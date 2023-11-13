@@ -116,7 +116,7 @@ body {
 }
 
 .nav-items-animation {
-	animation: navItemsAnimation 1s both ;
+	animation: navItemsAnimation 1s both;
 }
 
 //header
@@ -158,6 +158,31 @@ body {
 		&::before {
 			background-color: c.$light-white;
 		}
+	}
+}
+
+//MAIN
+
+//DREAMS SECTION
+
+.dreams {
+	&__box {
+		display: flex;
+		flex-direction: column;
+		margin: 2em 0;
+	}
+
+	&__img {
+		width: 100%;
+		margin-bottom: 1em;
+	}
+
+	&__title {
+		margin-bottom: 0.5em;
+	}
+
+	&__text {
+		font-size: 1.4rem;
 	}
 }
 
