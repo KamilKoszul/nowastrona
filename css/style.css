@@ -160,6 +160,7 @@ body {
   padding: 0.5em 2em;
   color: #fff;
   text-decoration: none;
+  font-size: 1.4rem;
 }
 .nav__item::before {
   position: absolute;
@@ -244,6 +245,56 @@ body {
   font-size: 1.4rem;
 }
 
+.hero-img {
+  position: relative;
+  padding: 10em 5em;
+  background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/hero-img-small.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  color: #fff;
+  overflow: hidden;
+}
+.hero-img__title {
+  margin-bottom: 0.5em;
+  font-family: "Dancing Script", cursive;
+  font-size: 4rem;
+  font-weight: 300;
+}
+.hero-img__text {
+  font-size: 1.5rem;
+  padding: 1em 0;
+}
+
+@media (min-width: 576px) {
+  .nav__item {
+    font-size: 1.9rem;
+  }
+  .dreams__box {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .dreams__box-text {
+    width: 55%;
+  }
+  .dreams__box-text--right {
+    text-align: right;
+  }
+  .dreams__box-img {
+    width: 40%;
+  }
+  .dreams__box-img--right {
+    order: 1;
+  }
+  .dreams__img {
+    margin-bottom: 0;
+    max-height: 300px;
+  }
+  .dreams__title {
+    font-size: 1.4rem;
+  }
+}
 @media (min-width: 768px) {
   .white-block {
     height: 50px;
@@ -258,8 +309,30 @@ body {
   .header__btn {
     font-size: 1.6rem;
   }
+  .dreams__title {
+    font-size: 2rem;
+  }
+  .dreams__text {
+    font-size: 1.8rem;
+  }
+  .hero-img {
+    padding: 30em 2em;
+  }
+  .hero-img hr {
+    margin: 0 auto;
+    width: 70%;
+  }
+  .hero-img__title {
+    font-size: 5.2rem;
+  }
+  .hero-img__text {
+    font-size: 2.1rem;
+  }
 }
 @media (min-width: 992px) {
+  .nav__item {
+    font-size: 3rem;
+  }
   .burger-btn {
     top: 45px;
     right: 45px;
@@ -269,5 +342,31 @@ body {
   }
   .header__heading {
     font-size: 8rem;
+  }
+  .dreams__box {
+    margin: 5em 0;
+  }
+  .dreams__box-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin-bottom: 3.5em;
+  }
+  .dreams__title {
+    font-size: 3.2rem;
+  }
+  .dreams__text {
+    font-size: 1.9rem;
+  }
+  .hero-img {
+    padding: 24em 2em;
+    background-image: linear-gradient(45deg, rgba(20, 105, 241, 0.75), rgba(42, 10, 184, 0.75)), url("../img/hero-img-large.jpg");
+  }
+  .hero-img__title {
+    font-size: 7.2rem;
+  }
+  .hero-img hr {
+    width: 60%;
+    max-width: 900px;
   }
 }/*# sourceMappingURL=style.css.map */
